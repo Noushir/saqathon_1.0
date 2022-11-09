@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stack Visualization</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/a6d27a9f7c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <br />
+    <br />
+    <br />
+    <a href="index.html"><img src="stack.gif" class="center"/></a>
+    <h2 class="topic">Stack Visualization</h2>
+    <br />
+    <section class="header">
+      <nav>
+      <div class="content">
+        <label for="text"
+          >Enter The Element To Be Pushed into the Stack:-</label
+        >
+        <input
+          type="text"
+          name="element"
+          id="text"
+          required
+          class="form-control form-control-lg"
+        />
+        <div class="buttons">
+          <button
+            type="button"
+            class="btn btn-success"
+            id="push"
+            onclick="Push()"
+          >
+            Push
+          </button>
+          <button id="pop" onclick="Pop()" type="button" class="btn btn-danger">
+            Pop
+          </button>
+        </div>
+
+        <div id="stack">
+          Elements inside stack are:-
+          <ul id="list"></ul>
+        </div>
+
+        <div id="pop_stack">
+          Elements Popped:-
+          <ul id="list1"></ul>
+        </div>
+      </div>
+      <br />
+    </nav>
+      <script src="javas.js"></script>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+      <script
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"
+      ></script>
+    </section>
+  </body>
+</html>
